@@ -35,13 +35,18 @@ li {
   position: relative;
   left: -25px;
 }
+
+.weather-app-wrapper {
+  max-width: 700px;
+  margin: 20px auto;
+}
+
 .weather-app {
   border: 1px solid #dadde1;
   padding: 15px;
-  margin: 20px auto;
   border-radius: 10px;
-  max-width: 700px;
 }
+
 .city {
   position: relative;
   bottom: -60px;
@@ -67,29 +72,7 @@ li {
 .search-form {
   margin-bottom: -30px;
 }
-.prevision {
-  margin-top: 50px;
-  margin-left: 5px;
-}
-.day {
-  position: relative;
-  right: -13px;
-  font-size: 17px;
-}
-.max-min {
-  position: relative;
-  right: -16px;
-  font-size: 14px;
-  color: #7c7c7c;
-}
-.wednesday {
-  border: 1px solid #dadde1;
-  padding: 8px;
-  border-radius: 10px;
-  max-width: 90px;
-  position: relative;
-  top: -10px;
-}
+
 .link-source {
   text-align: center;
   color: #7c7c7c;

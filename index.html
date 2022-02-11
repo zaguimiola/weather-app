@@ -16,52 +16,45 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-        <form class="search-form" id="search-form">
-          <div class="row">
-            <div class="col-6">
-              <input
-                type="search"
-                class="form-control"
-                autofocus
-                id="search-text-input"
-              />
-            </div>
-            <div class="col-3">
-              <input
-                type="submit"
-                value="Search"
-                class="form-control btn btn-primary"
-              />
-            </div>
-            <div class="col-3">
-              <button
-                class="btn btn-success w-100"
-                id="current-location-button"
-              >
-                📍 Current
-              </button>
-            </div>
-          </div>
-        </form>
-        <div class="city">
-          <h1 id="city"></h1>
-          <p id="date"></p>
-          <p id="description"></p>
-        </div>
-        <div class="row">
-          <div class="col-4">
-            <div class="clearfix">
-              <img src="images/img.jpg" class="weather-icon float-start" />
-              <div class="float-start">
-                <span class="temperature" id="temperature-value"></span>
-                <span class="units">
-                  <a href="#" id="celsius"><strong>ºC</strong></a> |
-                  <a href="#" id="fahrenheit">ºF</a>
-                </span>
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <form class="search-form" id="search-form">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  class="form-control"
+                  autofocus
+                  id="search-text-input"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="form-control btn btn-primary"
+                />
               </div>
             </div>
-          </div>
+          </form>
+            <div class="city">
+              <h1 id="city"></h1>
+              <p id="date"></p>
+              <p id="description"></p>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <div class="clearfix">
+                  <img src="images/img.jpg" class="weather-icon float-start" />
+                  <div class="float-start">
+                  <span class="temperature" id="temperature-value"></span>
+                  <span class="units">
+                    <a href="#" id="celsius"><strong>ºC</strong></a> |
+                    <a href="#" id="fahrenheit">ºF</a>
+                  </span>
+                </div>
+              </div>
+            </div>
           <div class="col">
             <ul>
               <li>Humidity: <span id="humidity"></span>%</li>
@@ -69,12 +62,9 @@
             </ul>
           </div>
         </div>
-      <div class="link-source">
-        <a
-          href="https://github.com/zaguimiola/weather-app-project"
-          target="_blank"
-          >Open-source code</a
-        >, by Marta Torres
+        <small>
+          <a href="https://github.com/zaguimiola/weather-app-project">Open-source code</a> by Marta Torres
+        </small>
       </div>
     </div>
     <script src="src/script.js"></script>
