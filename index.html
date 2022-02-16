@@ -26,27 +26,28 @@
                   class="form-control"
                   autofocus
                   id="search-text-input"
+                  autocomplete="off"
                 />
               </div>
               <div class="col-3">
                 <input
                   type="submit"
-                  value="Search"
+                  value="search"
                   class="form-control btn btn-primary"
                 />
               </div>
             </div>
           </form>
-            <div class="city">
-              <h1 id="city"></h1>
-              <p id="date"></p>
-              <p id="description"></p>
-            </div>
-            <div class="row">
-              <div class="col-4">
-                <div class="clearfix">
-                  <img src="images/img.jpg" class="weather-icon float-start" />
-                  <div class="float-start">
+          <div class="city">
+            <h1 class="city"></h1>
+            <p class="date"></p>
+            <p class="description"></p>
+          </div>
+          <div class="row">
+            <div class="col-4">
+              <div class="clearfix">
+                <img src="" alt="" class="weather-icon float-start" />
+                <div class="float-start">
                   <span class="temperature" id="temperature-value"></span>
                   <span class="units">
                     <a href="#" id="celsius"><strong>ºC</strong></a> |
@@ -55,16 +56,20 @@
                 </div>
               </div>
             </div>
-          <div class="col">
-            <ul>
-              <li>Humidity: <span id="humidity"></span>%</li>
-              <li>wind: <span id="wind"></span> km/h</li>
-            </ul>
+            <div class="col">
+              <ul>
+                <li>Humidity: <span class="humidity"></span>%</li>
+                <li>Wind: <span class="wind"></span> km/h</li>
+              </ul>
+            </div>
           </div>
         </div>
-        <small>
-          <a href="https://github.com/zaguimiola/weather-app-project">Open-source code</a> by Marta Torres
-        </small>
+        <div class="link-source">
+          <a href="https://github.com/zaguimiola/weather-app-project"
+            >Open-source code</a
+          >
+          by Marta Torres
+        </div>
       </div>
     </div>
     <script src="src/script.js"></script>
