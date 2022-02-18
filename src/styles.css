@@ -16,8 +16,12 @@ p {
   height: 19px;
   line-height: 1;
   margin-bottom: 0;
+}
+
+p:first-letter {
   text-transform: capitalize;
 }
+
 a {
   text-decoration: none;
 }
