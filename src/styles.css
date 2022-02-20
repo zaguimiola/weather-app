@@ -52,6 +52,10 @@ li {
   border-radius: 10px;
 }
 
+.search-form {
+  margin-bottom: -30px;
+}
+
 .city {
   position: relative;
   bottom: -60px;
@@ -65,7 +69,7 @@ li {
 }
 .temperature {
   color: rgb(33, 33, 33);
-  font-size: 55px;
+  font-size: 56px;
   font-weight: 400;
   line-height: 1;
 }
@@ -74,8 +78,15 @@ li {
   top: -33px;
   color: #7c7c7c;
 }
-.search-form {
-  margin-bottom: -30px;
+
+.weather-temperature .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+  font-weight: bold;
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
 }
 
 .link-source {
