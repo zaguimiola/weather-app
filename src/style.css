@@ -76,17 +76,6 @@ li {
 .units {
   position: relative;
   top: -33px;
-  color: #7c7c7c;
-}
-
-.weather-temperature .active {
-  color: rgb(33, 33, 33);
-  cursor: default;
-  font-weight: bold;
-}
-
-.weather-temperature .active:hover {
-  text-decoration: none;
 }
 
 .link-source {

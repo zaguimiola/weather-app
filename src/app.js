@@ -113,32 +113,7 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
-function displayFahrenheitTemperature(event) {
-  event.preventDefault();
-  let fahrenheitElement = document.querySelector("#temperature-value");
-  celsius.classList.remove("active");
-  fahrenheit.classList.add("active");
-  let fahrenheitTemperature = (celsiusTemperature * 9) / 9 + 32;
-  fahrenheitElement.innerHTML = Math.round(fahrenheitTemperature);
-}
-
-function displayCelsiusTemperature(event) {
-  event.preventDefault();
-  celsius.classList.add("active");
-  fahrenheit.classList.remove("active");
-  let celsiusElement = document.querySelector("#temperature-value");
-  celsiusElement.innerHTML = Math.round(celsiusTemperature);
-}
-
-let celsiusTemperature = null;
-
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
-
-let fahrenheit = document.querySelector("#fahrenheit");
-fahrenheit.addEventListener("click", displayFahrenheitTemperature);
-
-let celsius = document.querySelector("#celsius");
-celsius.addEventListener("click", displayCelsiusTemperature);
 
 search("Toulouse");
