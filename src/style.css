@@ -31,18 +31,18 @@ ul {
 }
 li {
   color: #7c7c7c;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 100;
   height: 19px;
   line-height: 1;
   list-style: none;
   position: relative;
-  left: -25px;
+  left: -15px;
   bottom: -10px;
 }
 
 .weather-app-wrapper {
-  max-width: 700px;
+  max-width: 600px;
   margin: 20px auto;
 }
 
@@ -61,11 +61,11 @@ li {
   bottom: -60px;
 }
 .weather-icon {
-  height: 64px;
-  width: 64px;
+  height: 75px;
+  width: 75px;
   margin-right: 10px;
   position: relative;
-  top: -5px;
+  top: -10px;
 }
 .temperature {
   color: rgb(33, 33, 33);
@@ -75,7 +75,7 @@ li {
 }
 .units {
   position: relative;
-  top: -33px;
+  top: -30px;
 }
 
 .link-source {
@@ -89,7 +89,7 @@ li {
 }
 
 .weather-forecast-date {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .weather-forecast-temperature {
@@ -97,5 +97,5 @@ li {
 }
 
 .weather-forecast-temperature-min {
-  opacity: 0.6;
+  opacity: 0.9;
 }
