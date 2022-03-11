@@ -74,7 +74,6 @@ function getForecast(coordinates) {
 }
 
 function showWeather(response) {
-  console.log(response.data);
   let temperatureElement = document.querySelector("#temperature-value");
   let cityElement = document.querySelector("#city");
   let descriptionElement = document.querySelector("#description");
@@ -82,8 +81,6 @@ function showWeather(response) {
   let windElement = document.querySelector("#wind");
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#icon");
-
-  celsiusTemperature = response.data.main.temp;
 
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
   cityElement.innerHTML = response.data.name;
