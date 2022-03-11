@@ -48,7 +48,6 @@ function displayForecast(response) {
                   src="http://openweathermap.org/img/wn/${
                     forecastDay.weather[0].icon
                   }@2x.png"
-                  alt=""
                   width="60"
                 />
                 <div class="weather-forecast-temperature">
@@ -88,11 +87,13 @@ function showWeather(response) {
   humidityElement.innerHTML = response.data.main.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
-  iconElement.setAttribute(
-    "src",
-    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
-  );
-  iconElement.setAttribute("alt", response.data.weather[0].description);
+
+  let iconHTML = `<span>`;
+  iconHTML =
+    iconHTML +
+    `<img src="http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png"  />`;
+  iconHTML = iconHTML + `<span/>`;
+  iconElement.innerHTML = iconHTML;
 
   getForecast(response.data.coord);
 }
